@@ -1,0 +1,6 @@
+{
+  "id": "sample-coding-agent",
+  "bearer": "agent",
+  "label": "Sample profile: coding agent with a test runner but no gated deploys (illustrative)",
+  "levels": { "instruction-writing": 4, "structured-output": 4, "function-calling": 4, "code-execution": 4, "agent-loop": 3, "planning": 3, "verification": 4, "token-economics": 3, "failure-modes": 3, "few-shot": 3, "context-budget": 3, "scoping": 3 }
+}

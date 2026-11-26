@@ -1,0 +1,1762 @@
+{
+  "version": "0.1.0",
+  "totals": {
+    "branches": 13,
+    "skills": 73,
+    "roles": 26,
+    "human_roles": 15,
+    "agent_roles": 11,
+    "human_only": 18,
+    "agent_only": 0,
+    "shared": 55
+  },
+  "roles": [
+    {
+      "id": "ai-architect",
+      "label": "AI Architect",
+      "bearer": "human",
+      "skills": 13,
+      "breadth": 9,
+      "depth": 3.62,
+      "xp": 145,
+      "branch_profile": {
+        "foundations": 0,
+        "models": 0.085,
+        "context": 0,
+        "retrieval": 0.149,
+        "tools": 0.064,
+        "agents": 0.085,
+        "evals": 0.064,
+        "safety": 0.149,
+        "infra": 0.149,
+        "data": 0,
+        "multimodal": 0,
+        "product": 0.064,
+        "judgment": 0.191
+      }
+    },
+    {
+      "id": "ai-engineer",
+      "label": "AI Engineer",
+      "bearer": "human",
+      "skills": 11,
+      "breadth": 8,
+      "depth": 3.45,
+      "xp": 85,
+      "branch_profile": {
+        "foundations": 0,
+        "models": 0,
+        "context": 0.184,
+        "retrieval": 0.105,
+        "tools": 0.184,
+        "agents": 0.105,
+        "evals": 0.079,
+        "safety": 0.079,
+        "infra": 0.158,
+        "data": 0,
+        "multimodal": 0,
+        "product": 0,
+        "judgment": 0.105
+      }
+    },
+    {
+      "id": "agent-engineer",
+      "label": "Agent Engineer",
+      "bearer": "human",
+      "skills": 11,
+      "breadth": 5,
+      "depth": 3.82,
+      "xp": 138,
+      "branch_profile": {
+        "foundations": 0,
+        "models": 0,
+        "context": 0,
+        "retrieval": 0.095,
+        "tools": 0.143,
+        "agents": 0.571,
+        "evals": 0.095,
+        "safety": 0.095,
+        "infra": 0,
+        "data": 0,
+        "multimodal": 0,
+        "product": 0,
+        "judgment": 0
+      }
+    },
+    {
+      "id": "ml-engineer",
+      "label": "ML Engineer",
+      "bearer": "human",
+      "skills": 9,
+      "breadth": 4,
+      "depth": 3.56,
+      "xp": 93,
+      "branch_profile": {
+        "foundations": 0.375,
+        "models": 0,
+        "context": 0,
+        "retrieval": 0,
+        "tools": 0,
+        "agents": 0,
+        "evals": 0.094,
+        "safety": 0,
+        "infra": 0.219,
+        "data": 0.313,
+        "multimodal": 0,
+        "product": 0,
+        "judgment": 0
+      }
+    },
+    {
+      "id": "research-scientist",
+      "label": "Applied Research Scientist",
+      "bearer": "human",
+      "skills": 9,
+      "breadth": 5,
+      "depth": 4.33,
+      "xp": 113,
+      "branch_profile": {
+        "foundations": 0.487,
+        "models": 0.103,
+        "context": 0,
+        "retrieval": 0,
+        "tools": 0,
+        "agents": 0,
+        "evals": 0.103,
+        "safety": 0,
+        "infra": 0,
+        "data": 0.205,
+        "multimodal": 0,
+        "product": 0,
+        "judgment": 0.103
+      }
+    },
+    {
+      "id": "evals-engineer",
+      "label": "Evals Engineer",
+      "bearer": "human",
+      "skills": 9,
+      "breadth": 5,
+      "depth": 4.11,
+      "xp": 102,
+      "branch_profile": {
+        "foundations": 0.108,
+        "models": 0,
+        "context": 0,
+        "retrieval": 0,
+        "tools": 0,
+        "agents": 0,
+        "evals": 0.622,
+        "safety": 0.081,
+        "infra": 0,
+        "data": 0.081,
+        "multimodal": 0,
+        "product": 0,
+        "judgment": 0.108
+      }
+    },
+    {
+      "id": "context-engineer",
+      "label": "Prompt and Context Engineer",
+      "bearer": "human",
+      "skills": 10,
+      "breadth": 3,
+      "depth": 4.2,
+      "xp": 97,
+      "branch_profile": {
+        "foundations": 0,
+        "models": 0.262,
+        "context": 0.667,
+        "retrieval": 0,
+        "tools": 0,
+        "agents": 0,
+        "evals": 0.071,
+        "safety": 0,
+        "infra": 0,
+        "data": 0,
+        "multimodal": 0,
+        "product": 0,
+        "judgment": 0
+      }
+    },
+    {
+      "id": "mlops-engineer",
+      "label": "AI Platform Engineer",
+      "bearer": "human",
+      "skills": 9,
+      "breadth": 4,
+      "depth": 3.78,
+      "xp": 102,
+      "branch_profile": {
+        "foundations": 0,
+        "models": 0.088,
+        "context": 0,
+        "retrieval": 0,
+        "tools": 0,
+        "agents": 0,
+        "evals": 0.118,
+        "safety": 0.176,
+        "infra": 0.618,
+        "data": 0,
+        "multimodal": 0,
+        "product": 0,
+        "judgment": 0
+      }
+    },
+    {
+      "id": "safety-lead",
+      "label": "AI Safety and Governance Lead",
+      "bearer": "human",
+      "skills": 9,
+      "breadth": 4,
+      "depth": 4,
+      "xp": 115,
+      "branch_profile": {
+        "foundations": 0,
+        "models": 0,
+        "context": 0,
+        "retrieval": 0,
+        "tools": 0,
+        "agents": 0,
+        "evals": 0,
+        "safety": 0.722,
+        "infra": 0.083,
+        "data": 0,
+        "multimodal": 0.083,
+        "product": 0,
+        "judgment": 0.111
+      }
+    },
+    {
+      "id": "ai-pm",
+      "label": "AI Product Manager",
+      "bearer": "human",
+      "skills": 9,
+      "breadth": 4,
+      "depth": 3.67,
+      "xp": 72,
+      "branch_profile": {
+        "foundations": 0,
+        "models": 0.152,
+        "context": 0,
+        "retrieval": 0,
+        "tools": 0,
+        "agents": 0,
+        "evals": 0.091,
+        "safety": 0,
+        "infra": 0,
+        "data": 0,
+        "multimodal": 0,
+        "product": 0.485,
+        "judgment": 0.273
+      }
+    },
+    {
+      "id": "creative-director",
+      "label": "AI Creative Director",
+      "bearer": "human",
+      "skills": 8,
+      "breadth": 3,
+      "depth": 4.13,
+      "xp": 90,
+      "branch_profile": {
+        "foundations": 0,
+        "models": 0,
+        "context": 0.121,
+        "retrieval": 0,
+        "tools": 0,
+        "agents": 0,
+        "evals": 0,
+        "safety": 0,
+        "infra": 0,
+        "data": 0,
+        "multimodal": 0.758,
+        "product": 0,
+        "judgment": 0.121
+      }
+    },
+    {
+      "id": "fde",
+      "label": "Forward-Deployed AI Engineer",
+      "bearer": "human",
+      "skills": 9,
+      "breadth": 6,
+      "depth": 3.89,
+      "xp": 69,
+      "branch_profile": {
+        "foundations": 0,
+        "models": 0,
+        "context": 0,
+        "retrieval": 0.114,
+        "tools": 0.257,
+        "agents": 0.086,
+        "evals": 0,
+        "safety": 0.114,
+        "infra": 0,
+        "data": 0,
+        "multimodal": 0,
+        "product": 0.2,
+        "judgment": 0.229
+      }
+    },
+    {
+      "id": "caio",
+      "label": "Chief AI Officer",
+      "bearer": "human",
+      "skills": 8,
+      "breadth": 4,
+      "depth": 4.5,
+      "xp": 140,
+      "branch_profile": {
+        "foundations": 0,
+        "models": 0.111,
+        "context": 0,
+        "retrieval": 0,
+        "tools": 0,
+        "agents": 0,
+        "evals": 0,
+        "safety": 0.111,
+        "infra": 0,
+        "data": 0,
+        "multimodal": 0,
+        "product": 0.528,
+        "judgment": 0.25
+      }
+    },
+    {
+      "id": "ai-founder",
+      "label": "AI-native Founder",
+      "bearer": "human",
+      "skills": 10,
+      "breadth": 6,
+      "depth": 3.6,
+      "xp": 102,
+      "branch_profile": {
+        "foundations": 0,
+        "models": 0.083,
+        "context": 0,
+        "retrieval": 0,
+        "tools": 0,
+        "agents": 0.083,
+        "evals": 0,
+        "safety": 0,
+        "infra": 0.083,
+        "data": 0,
+        "multimodal": 0.056,
+        "product": 0.306,
+        "judgment": 0.389
+      }
+    },
+    {
+      "id": "ai-fluent-professional",
+      "label": "AI-fluent Professional",
+      "bearer": "human",
+      "skills": 8,
+      "breadth": 5,
+      "depth": 2.38,
+      "xp": 30,
+      "branch_profile": {
+        "foundations": 0,
+        "models": 0.211,
+        "context": 0.158,
+        "retrieval": 0,
+        "tools": 0,
+        "agents": 0,
+        "evals": 0,
+        "safety": 0.105,
+        "infra": 0,
+        "data": 0,
+        "multimodal": 0.105,
+        "product": 0,
+        "judgment": 0.421
+      }
+    },
+    {
+      "id": "coding-agent",
+      "label": "Coding Agent",
+      "bearer": "agent",
+      "skills": 10,
+      "breadth": 6,
+      "depth": 4.1,
+      "xp": 97,
+      "branch_profile": {
+        "foundations": 0,
+        "models": 0,
+        "context": 0.098,
+        "retrieval": 0,
+        "tools": 0.244,
+        "agents": 0.268,
+        "evals": 0.098,
+        "safety": 0.073,
+        "infra": 0,
+        "data": 0,
+        "multimodal": 0,
+        "product": 0,
+        "judgment": 0.22
+      }
+    },
+    {
+      "id": "research-agent",
+      "label": "Research Agent",
+      "bearer": "agent",
+      "skills": 9,
+      "breadth": 5,
+      "depth": 4,
+      "xp": 82,
+      "branch_profile": {
+        "foundations": 0,
+        "models": 0,
+        "context": 0.194,
+        "retrieval": 0.333,
+        "tools": 0.083,
+        "agents": 0,
+        "evals": 0,
+        "safety": 0.111,
+        "infra": 0,
+        "data": 0,
+        "multimodal": 0,
+        "product": 0,
+        "judgment": 0.278
+      }
+    },
+    {
+      "id": "orchestrator-agent",
+      "label": "Orchestrator Agent",
+      "bearer": "agent",
+      "skills": 9,
+      "breadth": 5,
+      "depth": 4.11,
+      "xp": 127,
+      "branch_profile": {
+        "foundations": 0,
+        "models": 0.108,
+        "context": 0,
+        "retrieval": 0,
+        "tools": 0,
+        "agents": 0.486,
+        "evals": 0.081,
+        "safety": 0,
+        "infra": 0.081,
+        "data": 0,
+        "multimodal": 0,
+        "product": 0,
+        "judgment": 0.243
+      }
+    },
+    {
+      "id": "memory-agent",
+      "label": "Memory and Knowledge Agent",
+      "bearer": "agent",
+      "skills": 7,
+      "breadth": 4,
+      "depth": 4,
+      "xp": 70,
+      "branch_profile": {
+        "foundations": 0,
+        "models": 0,
+        "context": 0.143,
+        "retrieval": 0.607,
+        "tools": 0,
+        "agents": 0,
+        "evals": 0,
+        "safety": 0.143,
+        "infra": 0,
+        "data": 0,
+        "multimodal": 0,
+        "product": 0,
+        "judgment": 0.107
+      }
+    },
+    {
+      "id": "judge-agent",
+      "label": "Eval and Judge Agent",
+      "bearer": "agent",
+      "skills": 8,
+      "breadth": 5,
+      "depth": 3.88,
+      "xp": 72,
+      "branch_profile": {
+        "foundations": 0,
+        "models": 0.097,
+        "context": 0.129,
+        "retrieval": 0,
+        "tools": 0,
+        "agents": 0,
+        "evals": 0.419,
+        "safety": 0.065,
+        "infra": 0,
+        "data": 0,
+        "multimodal": 0,
+        "product": 0,
+        "judgment": 0.29
+      }
+    },
+    {
+      "id": "security-agent",
+      "label": "Security Reviewer Agent",
+      "bearer": "agent",
+      "skills": 8,
+      "breadth": 3,
+      "depth": 4,
+      "xp": 77,
+      "branch_profile": {
+        "foundations": 0,
+        "models": 0,
+        "context": 0,
+        "retrieval": 0,
+        "tools": 0.094,
+        "agents": 0,
+        "evals": 0,
+        "safety": 0.625,
+        "infra": 0,
+        "data": 0,
+        "multimodal": 0,
+        "product": 0,
+        "judgment": 0.281
+      }
+    },
+    {
+      "id": "creative-agent",
+      "label": "Creative Production Agent",
+      "bearer": "agent",
+      "skills": 7,
+      "breadth": 3,
+      "depth": 4,
+      "xp": 60,
+      "branch_profile": {
+        "foundations": 0,
+        "models": 0,
+        "context": 0.143,
+        "retrieval": 0,
+        "tools": 0,
+        "agents": 0,
+        "evals": 0,
+        "safety": 0,
+        "infra": 0,
+        "data": 0,
+        "multimodal": 0.75,
+        "product": 0,
+        "judgment": 0.107
+      }
+    },
+    {
+      "id": "analyst-agent",
+      "label": "Data Analyst Agent",
+      "bearer": "agent",
+      "skills": 7,
+      "breadth": 5,
+      "depth": 3.57,
+      "xp": 51,
+      "branch_profile": {
+        "foundations": 0,
+        "models": 0,
+        "context": 0.16,
+        "retrieval": 0,
+        "tools": 0.28,
+        "agents": 0,
+        "evals": 0,
+        "safety": 0.12,
+        "infra": 0,
+        "data": 0.08,
+        "multimodal": 0,
+        "product": 0,
+        "judgment": 0.36
+      }
+    },
+    {
+      "id": "ops-agent",
+      "label": "Ops and SRE Agent",
+      "bearer": "agent",
+      "skills": 7,
+      "breadth": 5,
+      "depth": 4,
+      "xp": 80,
+      "branch_profile": {
+        "foundations": 0,
+        "models": 0,
+        "context": 0,
+        "retrieval": 0,
+        "tools": 0.143,
+        "agents": 0,
+        "evals": 0.143,
+        "safety": 0.286,
+        "infra": 0.286,
+        "data": 0,
+        "multimodal": 0,
+        "product": 0,
+        "judgment": 0.143
+      }
+    },
+    {
+      "id": "support-agent",
+      "label": "Customer Support Agent",
+      "bearer": "agent",
+      "skills": 7,
+      "breadth": 5,
+      "depth": 3.57,
+      "xp": 60,
+      "branch_profile": {
+        "foundations": 0,
+        "models": 0.12,
+        "context": 0,
+        "retrieval": 0.16,
+        "tools": 0.12,
+        "agents": 0,
+        "evals": 0,
+        "safety": 0.32,
+        "infra": 0,
+        "data": 0,
+        "multimodal": 0,
+        "product": 0,
+        "judgment": 0.28
+      }
+    },
+    {
+      "id": "computer-use-agent",
+      "label": "Computer-use Agent",
+      "bearer": "agent",
+      "skills": 6,
+      "breadth": 4,
+      "depth": 3.83,
+      "xp": 62,
+      "branch_profile": {
+        "foundations": 0,
+        "models": 0,
+        "context": 0,
+        "retrieval": 0,
+        "tools": 0.217,
+        "agents": 0.304,
+        "evals": 0,
+        "safety": 0.304,
+        "infra": 0,
+        "data": 0,
+        "multimodal": 0,
+        "product": 0,
+        "judgment": 0.174
+      }
+    }
+  ],
+  "pairings": [
+    {
+      "agent_role": "coding-agent",
+      "closest_human_roles": [
+        {
+          "role": "ai-engineer",
+          "similarity": 0.506
+        },
+        {
+          "role": "agent-engineer",
+          "similarity": 0.374
+        },
+        {
+          "role": "fde",
+          "similarity": 0.31
+        }
+      ]
+    },
+    {
+      "agent_role": "research-agent",
+      "closest_human_roles": [
+        {
+          "role": "ai-engineer",
+          "similarity": 0.423
+        },
+        {
+          "role": "fde",
+          "similarity": 0.249
+        },
+        {
+          "role": "context-engineer",
+          "similarity": 0.194
+        }
+      ]
+    },
+    {
+      "agent_role": "orchestrator-agent",
+      "closest_human_roles": [
+        {
+          "role": "ai-founder",
+          "similarity": 0.523
+        },
+        {
+          "role": "agent-engineer",
+          "similarity": 0.499
+        },
+        {
+          "role": "ai-architect",
+          "similarity": 0.344
+        }
+      ]
+    },
+    {
+      "agent_role": "memory-agent",
+      "closest_human_roles": [
+        {
+          "role": "ai-engineer",
+          "similarity": 0.356
+        },
+        {
+          "role": "fde",
+          "similarity": 0.35
+        },
+        {
+          "role": "ai-fluent-professional",
+          "similarity": 0.232
+        }
+      ]
+    },
+    {
+      "agent_role": "judge-agent",
+      "closest_human_roles": [
+        {
+          "role": "evals-engineer",
+          "similarity": 0.616
+        },
+        {
+          "role": "context-engineer",
+          "similarity": 0.263
+        },
+        {
+          "role": "ai-engineer",
+          "similarity": 0.245
+        }
+      ]
+    },
+    {
+      "agent_role": "security-agent",
+      "closest_human_roles": [
+        {
+          "role": "safety-lead",
+          "similarity": 0.601
+        },
+        {
+          "role": "ai-fluent-professional",
+          "similarity": 0.292
+        },
+        {
+          "role": "fde",
+          "similarity": 0.266
+        }
+      ]
+    },
+    {
+      "agent_role": "creative-agent",
+      "closest_human_roles": [
+        {
+          "role": "creative-director",
+          "similarity": 0.794
+        },
+        {
+          "role": "ai-fluent-professional",
+          "similarity": 0.424
+        },
+        {
+          "role": "context-engineer",
+          "similarity": 0.139
+        }
+      ]
+    },
+    {
+      "agent_role": "analyst-agent",
+      "closest_human_roles": [
+        {
+          "role": "fde",
+          "similarity": 0.409
+        },
+        {
+          "role": "ai-engineer",
+          "similarity": 0.319
+        },
+        {
+          "role": "ai-fluent-professional",
+          "similarity": 0.314
+        }
+      ]
+    },
+    {
+      "agent_role": "ops-agent",
+      "closest_human_roles": [
+        {
+          "role": "mlops-engineer",
+          "similarity": 0.522
+        },
+        {
+          "role": "safety-lead",
+          "similarity": 0.342
+        },
+        {
+          "role": "fde",
+          "similarity": 0.289
+        }
+      ]
+    },
+    {
+      "agent_role": "support-agent",
+      "closest_human_roles": [
+        {
+          "role": "ai-engineer",
+          "similarity": 0.362
+        },
+        {
+          "role": "safety-lead",
+          "similarity": 0.31
+        },
+        {
+          "role": "fde",
+          "similarity": 0.285
+        }
+      ]
+    },
+    {
+      "agent_role": "computer-use-agent",
+      "closest_human_roles": [
+        {
+          "role": "agent-engineer",
+          "similarity": 0.45
+        },
+        {
+          "role": "ai-engineer",
+          "similarity": 0.254
+        },
+        {
+          "role": "safety-lead",
+          "similarity": 0.241
+        }
+      ]
+    }
+  ],
+  "skill_demand": [
+    {
+      "id": "verification",
+      "branch": "judgment",
+      "tier": 1,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 3,
+      "agent_roles": 9,
+      "max_level": 5,
+      "criticality": 49
+    },
+    {
+      "id": "calibration",
+      "branch": "judgment",
+      "tier": 2,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 2,
+      "agent_roles": 5,
+      "max_level": 5,
+      "criticality": 30
+    },
+    {
+      "id": "data-privacy",
+      "branch": "safety",
+      "tier": 2,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 4,
+      "agent_roles": 4,
+      "max_level": 5,
+      "criticality": 29
+    },
+    {
+      "id": "prompt-injection",
+      "branch": "safety",
+      "tier": 2,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 2,
+      "agent_roles": 5,
+      "max_level": 5,
+      "criticality": 27
+    },
+    {
+      "id": "scoping",
+      "branch": "judgment",
+      "tier": 2,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 5,
+      "agent_roles": 1,
+      "max_level": 5,
+      "criticality": 25
+    },
+    {
+      "id": "rag",
+      "branch": "retrieval",
+      "tier": 3,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 3,
+      "agent_roles": 3,
+      "max_level": 4,
+      "criticality": 24
+    },
+    {
+      "id": "permissions",
+      "branch": "safety",
+      "tier": 3,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 3,
+      "agent_roles": 3,
+      "max_level": 4,
+      "criticality": 23
+    },
+    {
+      "id": "structured-output",
+      "branch": "context",
+      "tier": 2,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 2,
+      "agent_roles": 4,
+      "max_level": 4,
+      "criticality": 23
+    },
+    {
+      "id": "delegation",
+      "branch": "judgment",
+      "tier": 3,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 4,
+      "agent_roles": 1,
+      "max_level": 5,
+      "criticality": 20
+    },
+    {
+      "id": "test-sets",
+      "branch": "evals",
+      "tier": 2,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 4,
+      "agent_roles": 1,
+      "max_level": 5,
+      "criticality": 19
+    },
+    {
+      "id": "agent-evals",
+      "branch": "evals",
+      "tier": 4,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 3,
+      "agent_roles": 2,
+      "max_level": 4,
+      "criticality": 18
+    },
+    {
+      "id": "observability",
+      "branch": "infra",
+      "tier": 3,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 4,
+      "agent_roles": 1,
+      "max_level": 5,
+      "criticality": 18
+    },
+    {
+      "id": "planning",
+      "branch": "agents",
+      "tier": 3,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 1,
+      "agent_roles": 3,
+      "max_level": 5,
+      "criticality": 17
+    },
+    {
+      "id": "agent-loop",
+      "branch": "agents",
+      "tier": 2,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 3,
+      "agent_roles": 1,
+      "max_level": 5,
+      "criticality": 16
+    },
+    {
+      "id": "instruction-writing",
+      "branch": "context",
+      "tier": 1,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 3,
+      "agent_roles": 1,
+      "max_level": 5,
+      "criticality": 16
+    },
+    {
+      "id": "model-selection",
+      "branch": "models",
+      "tier": 2,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 4,
+      "agent_roles": 1,
+      "max_level": 4,
+      "criticality": 16
+    },
+    {
+      "id": "multi-agent",
+      "branch": "agents",
+      "tier": 4,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 3,
+      "agent_roles": 1,
+      "max_level": 5,
+      "criticality": 16
+    },
+    {
+      "id": "ai-economics",
+      "branch": "product",
+      "tier": 3,
+      "bearers": [
+        "human"
+      ],
+      "human_roles": 4,
+      "agent_roles": 0,
+      "max_level": 4,
+      "criticality": 15
+    },
+    {
+      "id": "code-execution",
+      "branch": "tools",
+      "tier": 3,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 1,
+      "agent_roles": 3,
+      "max_level": 5,
+      "criticality": 15
+    },
+    {
+      "id": "human-agent-teaming",
+      "branch": "judgment",
+      "tier": 4,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 2,
+      "agent_roles": 2,
+      "max_level": 4,
+      "criticality": 15
+    },
+    {
+      "id": "audit-trails",
+      "branch": "safety",
+      "tier": 3,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 2,
+      "agent_roles": 2,
+      "max_level": 4,
+      "criticality": 14
+    },
+    {
+      "id": "cost-engineering",
+      "branch": "infra",
+      "tier": 3,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 3,
+      "agent_roles": 1,
+      "max_level": 4,
+      "criticality": 14
+    },
+    {
+      "id": "state-handoff",
+      "branch": "agents",
+      "tier": 3,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 1,
+      "agent_roles": 3,
+      "max_level": 4,
+      "criticality": 14
+    },
+    {
+      "id": "systems-thinking",
+      "branch": "judgment",
+      "tier": 4,
+      "bearers": [
+        "human"
+      ],
+      "human_roles": 3,
+      "agent_roles": 0,
+      "max_level": 5,
+      "criticality": 14
+    },
+    {
+      "id": "context-budget",
+      "branch": "context",
+      "tier": 3,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 1,
+      "agent_roles": 2,
+      "max_level": 5,
+      "criticality": 13
+    },
+    {
+      "id": "llm-judges",
+      "branch": "evals",
+      "tier": 3,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 2,
+      "agent_roles": 1,
+      "max_level": 5,
+      "criticality": 13
+    },
+    {
+      "id": "media-rights",
+      "branch": "multimodal",
+      "tier": 3,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 3,
+      "agent_roles": 1,
+      "max_level": 4,
+      "criticality": 13
+    },
+    {
+      "id": "red-teaming",
+      "branch": "safety",
+      "tier": 4,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 2,
+      "agent_roles": 2,
+      "max_level": 4,
+      "criticality": 13
+    },
+    {
+      "id": "use-case-discovery",
+      "branch": "product",
+      "tier": 1,
+      "bearers": [
+        "human"
+      ],
+      "human_roles": 3,
+      "agent_roles": 0,
+      "max_level": 5,
+      "criticality": 13
+    },
+    {
+      "id": "agent-memory",
+      "branch": "retrieval",
+      "tier": 3,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 2,
+      "agent_roles": 1,
+      "max_level": 5,
+      "criticality": 12
+    },
+    {
+      "id": "ai-governance",
+      "branch": "safety",
+      "tier": 4,
+      "bearers": [
+        "human"
+      ],
+      "human_roles": 3,
+      "agent_roles": 0,
+      "max_level": 5,
+      "criticality": 12
+    },
+    {
+      "id": "api-integration",
+      "branch": "tools",
+      "tier": 2,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 1,
+      "agent_roles": 2,
+      "max_level": 5,
+      "criticality": 12
+    },
+    {
+      "id": "failure-modes",
+      "branch": "models",
+      "tier": 2,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 3,
+      "agent_roles": 1,
+      "max_level": 4,
+      "criticality": 12
+    },
+    {
+      "id": "function-calling",
+      "branch": "tools",
+      "tier": 2,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 1,
+      "agent_roles": 2,
+      "max_level": 5,
+      "criticality": 12
+    },
+    {
+      "id": "production-monitoring",
+      "branch": "evals",
+      "tier": 4,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 2,
+      "agent_roles": 1,
+      "max_level": 4,
+      "criticality": 12
+    },
+    {
+      "id": "regression-gates",
+      "branch": "evals",
+      "tier": 3,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 2,
+      "agent_roles": 1,
+      "max_level": 5,
+      "criticality": 12
+    },
+    {
+      "id": "change-management",
+      "branch": "product",
+      "tier": 3,
+      "bearers": [
+        "human"
+      ],
+      "human_roles": 3,
+      "agent_roles": 0,
+      "max_level": 5,
+      "criticality": 11
+    },
+    {
+      "id": "computer-use",
+      "branch": "tools",
+      "tier": 4,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 1,
+      "agent_roles": 2,
+      "max_level": 5,
+      "criticality": 11
+    },
+    {
+      "id": "image-generation",
+      "branch": "multimodal",
+      "tier": 1,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 2,
+      "agent_roles": 1,
+      "max_level": 5,
+      "criticality": 11
+    },
+    {
+      "id": "incident-response",
+      "branch": "infra",
+      "tier": 4,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 2,
+      "agent_roles": 1,
+      "max_level": 4,
+      "criticality": 11
+    },
+    {
+      "id": "mcp",
+      "branch": "tools",
+      "tier": 2,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 3,
+      "agent_roles": 0,
+      "max_level": 4,
+      "criticality": 10
+    },
+    {
+      "id": "character-consistency",
+      "branch": "multimodal",
+      "tier": 4,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 1,
+      "agent_roles": 1,
+      "max_level": 5,
+      "criticality": 9
+    },
+    {
+      "id": "probability",
+      "branch": "foundations",
+      "tier": 1,
+      "bearers": [
+        "human"
+      ],
+      "human_roles": 2,
+      "agent_roles": 0,
+      "max_level": 5,
+      "criticality": 9
+    },
+    {
+      "id": "transformers",
+      "branch": "foundations",
+      "tier": 3,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 2,
+      "agent_roles": 0,
+      "max_level": 5,
+      "criticality": 9
+    },
+    {
+      "id": "ai-strategy",
+      "branch": "product",
+      "tier": 4,
+      "bearers": [
+        "human"
+      ],
+      "human_roles": 2,
+      "agent_roles": 0,
+      "max_level": 5,
+      "criticality": 8
+    },
+    {
+      "id": "fine-tuning",
+      "branch": "data",
+      "tier": 4,
+      "bearers": [
+        "human"
+      ],
+      "human_roles": 2,
+      "agent_roles": 0,
+      "max_level": 4,
+      "criticality": 8
+    },
+    {
+      "id": "model-frontier",
+      "branch": "models",
+      "tier": 4,
+      "bearers": [
+        "human"
+      ],
+      "human_roles": 2,
+      "agent_roles": 0,
+      "max_level": 4,
+      "criticality": 8
+    },
+    {
+      "id": "serving",
+      "branch": "infra",
+      "tier": 2,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 2,
+      "agent_roles": 0,
+      "max_level": 5,
+      "criticality": 8
+    },
+    {
+      "id": "video-generation",
+      "branch": "multimodal",
+      "tier": 3,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 1,
+      "agent_roles": 1,
+      "max_level": 4,
+      "criticality": 8
+    },
+    {
+      "id": "knowledge-graphs",
+      "branch": "retrieval",
+      "tier": 4,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 0,
+      "agent_roles": 2,
+      "max_level": 4,
+      "criticality": 7
+    },
+    {
+      "id": "long-horizon",
+      "branch": "agents",
+      "tier": 5,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 1,
+      "agent_roles": 1,
+      "max_level": 4,
+      "criticality": 7
+    },
+    {
+      "id": "prompt-caching",
+      "branch": "context",
+      "tier": 3,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 2,
+      "agent_roles": 0,
+      "max_level": 4,
+      "criticality": 7
+    },
+    {
+      "id": "self-hosting",
+      "branch": "infra",
+      "tier": 4,
+      "bearers": [
+        "human"
+      ],
+      "human_roles": 2,
+      "agent_roles": 0,
+      "max_level": 4,
+      "criticality": 7
+    },
+    {
+      "id": "voice-audio",
+      "branch": "multimodal",
+      "tier": 2,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 1,
+      "agent_roles": 1,
+      "max_level": 4,
+      "criticality": 7
+    },
+    {
+      "id": "preference-optimization",
+      "branch": "data",
+      "tier": 5,
+      "bearers": [
+        "human"
+      ],
+      "human_roles": 2,
+      "agent_roles": 0,
+      "max_level": 4,
+      "criticality": 6
+    },
+    {
+      "id": "sampling",
+      "branch": "models",
+      "tier": 1,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 1,
+      "agent_roles": 1,
+      "max_level": 3,
+      "criticality": 6
+    },
+    {
+      "id": "coe-design",
+      "branch": "product",
+      "tier": 5,
+      "bearers": [
+        "human"
+      ],
+      "human_roles": 1,
+      "agent_roles": 0,
+      "max_level": 5,
+      "criticality": 5
+    },
+    {
+      "id": "creative-direction",
+      "branch": "multimodal",
+      "tier": 4,
+      "bearers": [
+        "human"
+      ],
+      "human_roles": 1,
+      "agent_roles": 0,
+      "max_level": 5,
+      "criticality": 5
+    },
+    {
+      "id": "few-shot",
+      "branch": "context",
+      "tier": 2,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 1,
+      "agent_roles": 0,
+      "max_level": 5,
+      "criticality": 5
+    },
+    {
+      "id": "linear-algebra",
+      "branch": "foundations",
+      "tier": 1,
+      "bearers": [
+        "human"
+      ],
+      "human_roles": 1,
+      "agent_roles": 0,
+      "max_level": 5,
+      "criticality": 5
+    },
+    {
+      "id": "search-basics",
+      "branch": "retrieval",
+      "tier": 1,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 0,
+      "agent_roles": 1,
+      "max_level": 5,
+      "criticality": 5
+    },
+    {
+      "id": "skill-authoring",
+      "branch": "context",
+      "tier": 3,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 1,
+      "agent_roles": 0,
+      "max_level": 5,
+      "criticality": 5
+    },
+    {
+      "id": "agent-sdk",
+      "branch": "agents",
+      "tier": 3,
+      "bearers": [
+        "human"
+      ],
+      "human_roles": 1,
+      "agent_roles": 0,
+      "max_level": 4,
+      "criticality": 4
+    },
+    {
+      "id": "ai-ux",
+      "branch": "product",
+      "tier": 2,
+      "bearers": [
+        "human"
+      ],
+      "human_roles": 1,
+      "agent_roles": 0,
+      "max_level": 4,
+      "criticality": 4
+    },
+    {
+      "id": "data-curation",
+      "branch": "data",
+      "tier": 2,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 1,
+      "agent_roles": 0,
+      "max_level": 4,
+      "criticality": 4
+    },
+    {
+      "id": "embeddings",
+      "branch": "retrieval",
+      "tier": 2,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 0,
+      "agent_roles": 1,
+      "max_level": 4,
+      "criticality": 4
+    },
+    {
+      "id": "interpretability",
+      "branch": "foundations",
+      "tier": 5,
+      "bearers": [
+        "human"
+      ],
+      "human_roles": 1,
+      "agent_roles": 0,
+      "max_level": 4,
+      "criticality": 4
+    },
+    {
+      "id": "neural-nets",
+      "branch": "foundations",
+      "tier": 2,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 1,
+      "agent_roles": 0,
+      "max_level": 4,
+      "criticality": 4
+    },
+    {
+      "id": "optimization",
+      "branch": "foundations",
+      "tier": 2,
+      "bearers": [
+        "human"
+      ],
+      "human_roles": 1,
+      "agent_roles": 0,
+      "max_level": 4,
+      "criticality": 4
+    },
+    {
+      "id": "reasoning-modes",
+      "branch": "models",
+      "tier": 3,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 1,
+      "agent_roles": 0,
+      "max_level": 4,
+      "criticality": 4
+    },
+    {
+      "id": "labeling",
+      "branch": "data",
+      "tier": 2,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 1,
+      "agent_roles": 0,
+      "max_level": 3,
+      "criticality": 3
+    },
+    {
+      "id": "synthetic-data",
+      "branch": "data",
+      "tier": 3,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 0,
+      "agent_roles": 1,
+      "max_level": 2,
+      "criticality": 2
+    },
+    {
+      "id": "token-economics",
+      "branch": "models",
+      "tier": 1,
+      "bearers": [
+        "human",
+        "agent"
+      ],
+      "human_roles": 1,
+      "agent_roles": 0,
+      "max_level": 2,
+      "criticality": 2
+    }
+  ],
+  "unrequired_skills": []
+}

@@ -8,12 +8,12 @@
     "apps/*"
   ],
   "scripts": {
-    "validate": "npm run health:graph && node scripts/verify-canon-counts.mjs && npm run build --workspace @starlight/graph-schema && npm run build --workspace @starlight/graph-utils && npm run validate --workspace @starlight/graph-utils",
+    "validate": "npm run health:graph && node scripts/skill-tree.mjs build --check && node scripts/verify-canon-counts.mjs && npm run build --workspace @starlight/graph-schema && npm run build --workspace @starlight/graph-utils && npm run validate --workspace @starlight/graph-utils",
     "verify:counts": "node scripts/verify-canon-counts.mjs",
     "validate:fiction": "npm run build --workspace @starlight/graph-schema && npm run validate:fiction --workspace @starlight/graph-utils",
     "validate:atlas": "node scripts/validate-atlas.mjs",
     "test:fiction": "npm run build --workspace @starlight/graph-schema && npm run test --workspace @starlight/graph-utils",
-    "test:atlas": "node --test scripts/tests/atlas-contract.test.mjs scripts/tests/graph-utils.test.mjs scripts/tests/graph-schema.test.mjs",
+    "test:atlas": "node --test scripts/tests/atlas-contract.test.mjs scripts/tests/graph-utils.test.mjs scripts/tests/graph-schema.test.mjs scripts/tests/skill-tree.test.mjs",
     "build": "npm run build --workspaces",
     "lint": "npm run lint --workspaces --if-present",
     "dev": "cd apps/web && npm run dev",
@@ -24,7 +24,8 @@
     "export:notebooklm": "npx tsx scripts/export-for-notebooklm.ts",
     "mcp": "npx tsx scripts/starlight-knowledge-mcp.ts",
     "health:graph": "node scripts/graph-health.mjs",
-    "test:health": "node --test scripts/tests/graph-health.test.mjs"
+    "test:health": "node --test scripts/tests/graph-health.test.mjs",
+    "skill-tree": "node scripts/skill-tree.mjs"
   },
   "engines": {
     "node": ">=20.0.0"

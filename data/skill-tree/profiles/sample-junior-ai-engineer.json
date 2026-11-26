@@ -1,0 +1,6 @@
+{
+  "id": "sample-junior-ai-engineer",
+  "bearer": "human",
+  "label": "Sample profile: junior AI engineer (illustrative, not a real person)",
+  "levels": { "instruction-writing": 3, "structured-output": 2, "token-economics": 2, "failure-modes": 2, "function-calling": 2, "search-basics": 2, "verification": 2, "scoping": 2 }
+}

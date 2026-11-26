@@ -8,6 +8,7 @@ import searchIndexData from "../data/search-index.json";
 
 const LINKS = [
   { href: "/tree", label: "Tree" },
+  { href: "/skill-tree", label: "AI Skill Tree" },
   { href: "/graph", label: "Graph Visualizer" },
   { href: "/library", label: "Books & Canon" },
   { href: "/papers", label: "Papers" },
