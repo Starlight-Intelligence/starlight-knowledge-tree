@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://starlightintelligence.org/knowledge-tree/schemas/skill-tree.schema.json",
+  "title": "AISkillTreeRegistry",
+  "description": "Skills a human or an agent can hold, the roles that require them, and the level rubric. Cross-reference rules (prerequisites resolve, form a DAG, sit at or below the skill's tier; roles only require skills their bearer can hold) are enforced by scripts/skill-tree/lib.mjs.",
+  "type": "object",
+  "required": ["version", "status", "levels", "acquisition_modes", "branches", "skills", "roles"],
+  "definitions": {
+    "id": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+    "bearer": { "type": "string", "enum": ["human", "agent"] }
+  },
+  "properties": {
+    "version": { "type": "string" },
+    "status": { "type": "string", "enum": ["proposal", "stable"] },
+    "levels": {
+      "type": "array",
+      "items": { "type": "object", "required": ["level", "label", "human", "agent"], "properties": { "level": { "type": "integer", "minimum": 0, "maximum": 5 } } }
+    },
+    "acquisition_modes": { "type": "object", "required": ["human", "agent"] },
+    "branches": {
+      "type": "array",
+      "items": { "type": "object", "required": ["id", "label", "description"], "properties": { "id": { "$ref": "#/definitions/id" } } }
+    },
+    "skills": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "branch", "tier", "label", "bearers", "prerequisites", "description", "evidence"],
+        "properties": {
+          "id": { "$ref": "#/definitions/id" },
+          "branch": { "$ref": "#/definitions/id" },
+          "tier": { "type": "integer", "minimum": 1, "maximum": 5 },
+          "bearers": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/definitions/bearer" } },
+          "prerequisites": { "type": "array", "items": { "$ref": "#/definitions/id" } },
+          "evidence": { "type": "string", "minLength": 10 },
+          "agent_acquisition": { "type": "array", "items": { "type": "string", "enum": ["prompt", "tool", "memory", "harness", "finetune"] } }
+        }
+      }
+    },
+    "roles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "label", "bearer", "description", "requires"],
+        "properties": {
+          "id": { "$ref": "#/definitions/id" },
+          "bearer": { "$ref": "#/definitions/bearer" },
+          "requires": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "type": "object", "required": ["skill", "level"], "properties": { "skill": { "$ref": "#/definitions/id" }, "level": { "type": "integer", "minimum": 1, "maximum": 5 } } }
+          }
+        }
+      }
+    }
+  }
+}
